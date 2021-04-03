@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [clicked, setClicked] = useState(false);
+
+  // const handleClick = (n) => {
+  //   const elements = document.querySelectorAll("span");
+  //   console.log(elements);
+  //   clicked
+  //     ? elements[n].classList.remove("active")
+  //     : elements[n].classList.add("active");
+  //   setClicked(!clicked);
+  // };
+
+  const elements = document.querySelectorAll("span");
+  console.log(elements);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span>*</span>
+      <span>*</span>
+      <span>*</span>
+      <span>*</span>
+      {/* <span onClick={handleClick(0)}>*</span>
+      <span onClick={handleClick(1)}>*</span> */}
     </div>
   );
 }
