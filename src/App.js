@@ -25,7 +25,7 @@ function App() {
       <br />
       <br />
       <div className="test2">
-        <List items={["A", "B", "C", "D"]} />
+        <List />
       </div>
     </>
   );
