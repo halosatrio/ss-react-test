@@ -5,3 +5,9 @@
 .App span {
   cursor: pointer;
 }
+.test2 {
+  text-align: center;
+}
+.test2 p {
+  cursor: pointer;
+}

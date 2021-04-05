@@ -1,30 +1,33 @@
 import { useState } from "react";
 import "./App.css";
+// import Star from "./Star";
+import List from "./List";
 
 function App() {
-  const [clicked, setClicked] = useState(false);
+  // const [starsSelected, setStarsSelected] = useState(0);
+  // const totalStars = 5;
 
-  // const handleClick = (n) => {
-  //   const elements = document.querySelectorAll("span");
-  //   console.log(elements);
-  //   clicked
-  //     ? elements[n].classList.remove("active")
-  //     : elements[n].classList.add("active");
-  //   setClicked(!clicked);
+  // const handleChange = (starsSelected) => {
+  //   setStarsSelected(starsSelected);
   // };
 
-  const elements = document.querySelectorAll("span");
-  console.log(elements);
-
   return (
-    <div className="App">
-      <span>*</span>
-      <span>*</span>
-      <span>*</span>
-      <span>*</span>
-      {/* <span onClick={handleClick(0)}>*</span>
-      <span onClick={handleClick(1)}>*</span> */}
-    </div>
+    <>
+      {/* <div className="App">
+        {[...Array(totalStars)].map((n, i) => (
+          <Star
+            key={i}
+            selected={i < starsSelected}
+            onClick={() => handleChange(i + 1)}
+          />
+        ))}
+      </div> */}
+      <br />
+      <br />
+      <div className="test2">
+        <List items={["A", "B", "C", "D"]} />
+      </div>
+    </>
   );
 }
 
